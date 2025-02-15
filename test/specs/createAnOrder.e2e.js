@@ -2,14 +2,12 @@ const page = require('../../page');
 const helper = require('../../helper')
 
 describe('Create an order', () => {
-
     it('should set the address', async () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 10000 });
         await callATaxiButton.click();
-        await browser.pause(5000);
     })
 
     it('should choose supportive option', async () => {
@@ -21,7 +19,6 @@ describe('Create an order', () => {
        const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
        await optionSupportive.waitForClickable({ timeout: 10000});
        await optionSupportive.click();
-       await browser.pause(5000);
     })
 
     it('should enter the phone number', async () => {
@@ -30,7 +27,6 @@ describe('Create an order', () => {
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 10000 });
         await callATaxiButton.click();
-        await browser.pause(5000);
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
         await optionSupportive.click();
@@ -50,7 +46,6 @@ describe('Create an order', () => {
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 10000 });
         await callATaxiButton.click();
-        await browser.pause(5000);
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
         await optionSupportive.click();
@@ -87,7 +82,6 @@ describe('Create an order', () => {
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 10000 });
         await callATaxiButton.click();
-        await browser.pause(5000);
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
         await optionSupportive.click();
@@ -115,7 +109,7 @@ describe('Create an order', () => {
         await submitButton.click();
         const closeButton = await $('.close-button.section-close'); 
         await closeButton.waitForDisplayed({ timeout: 5000 }); 
-        await closeButton.click();;
+        await closeButton.click();
         const messageField = await $('//div[contains(@class, "input-container") and text()="Message to the driver..."]/following-sibling::div');
         await messageField.click();
         await messageField.setValue("Help with small suitcase");
@@ -127,7 +121,6 @@ describe('Create an order', () => {
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 10000 });
         await callATaxiButton.click();
-        await browser.pause(5000);
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
         await optionSupportive.click();
@@ -169,7 +162,6 @@ describe('Create an order', () => {
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 10000 });
         await callATaxiButton.click();
-        await browser.pause(5000);
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
         await optionSupportive.click();
@@ -218,7 +210,6 @@ describe('Create an order', () => {
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 10000 });
         await callATaxiButton.click();
-        await browser.pause(5000);
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
         await optionSupportive.click();
@@ -270,7 +261,6 @@ describe('Create an order', () => {
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 10000 });
         await callATaxiButton.click();
-        await browser.pause(5000);
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
         await optionSupportive.click();
