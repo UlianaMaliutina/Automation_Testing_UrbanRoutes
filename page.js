@@ -19,7 +19,7 @@ module.exports = {
     iceCreamPlusButton: iceCreamCounter.$('.counter-plus'),
     iceCreamCounterValue: iceCreamCounter.$('.counter-value'),
     carSearchButton: '.smart-button-main',
-    carSearchModal: '//div[contains(@class, "order-body")]/followng-sibling::div',
+    carSearchModal: '//div[contains(@class, "order-body")]/following-sibling::div',
     driverInfoButton: '//div[contains(@class, "order-button") and text()="James"]/following-sibling::div',
     driverInfo: '//div[contains(@class, "order-body")]/following-sibling::div',
     rideDuration: '//div[contains(@class, "text" and text()="Taxi ~ $3"]/following-sibling::div',
