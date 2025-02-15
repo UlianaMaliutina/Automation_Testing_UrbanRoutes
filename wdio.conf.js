@@ -22,9 +22,6 @@ exports.config = {
     bail: 0,
     baseUrl: 'https://cnt-75a9a395-e00d-419c-98c1-36475f3d8f8a.containerhub.tripleten-services.com',
     waitforTimeout: 10000,
-    before: function (capabilities, specs) {
-        browser.setTimeout({ 'pageLoad': 10000 })
-    },
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     services: [
