@@ -31,6 +31,6 @@ This project involves writing automated end-to-end (E2E) tests to validate the f
 cd hm08-qa-us
 2. Install dependencies: npm install
 3. Update the wdio.conf.js file with the correct API URL: module.exports = {
-    baseUrl: 'https://cnt-3a1870d9-8c09-47e1-8888-52cccaf5c3ce.containerhub.tripleten-services.com',
+    baseUrl: 'https://cnt-489c4f7b-97c6-4d05-b79f-d2dbcd563149.containerhub.tripleten-services.com',
 };
 4. Execute the test suite using WebdriverIO: npm run wdio

@@ -1,12 +1,13 @@
 const page = require('../../page');
-const helper = require('../../helper')
+const helper = require('../../helper');
 
 describe('Create an order', () => {
     it('should set the address', async () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callATaxiButton.waitForClickable({ timeout: 10000 });
+        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
     })
 
@@ -14,7 +15,8 @@ describe('Create an order', () => {
        await browser.url(`/`)
        await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
        const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-       await callATaxiButton.waitForClickable({ timeout: 10000 });
+       await callTaxiButton.waitForExist({ timeout: 15000 });
+       await callATaxiButton.waitForClickable({ timeout: 15000 });
        await callATaxiButton.click();
        const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
        await optionSupportive.waitForClickable({ timeout: 10000});
@@ -25,7 +27,8 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callATaxiButton.waitForClickable({ timeout: 10000 });
+        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
@@ -44,7 +47,8 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callATaxiButton.waitForClickable({ timeout: 10000 });
+        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
@@ -80,7 +84,8 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callATaxiButton.waitForClickable({ timeout: 10000 });
+        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
@@ -119,7 +124,8 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callATaxiButton.waitForClickable({ timeout: 10000 });
+        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
@@ -160,7 +166,8 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callATaxiButton.waitForClickable({ timeout: 10000 });
+        await callATaxiButton.waitForClickable({ timeout: 15000 });
+        await callTaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
@@ -208,7 +215,8 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callATaxiButton.waitForClickable({ timeout: 10000 });
+        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
@@ -259,7 +267,8 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callATaxiButton.waitForClickable({ timeout: 10000 });
+        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
