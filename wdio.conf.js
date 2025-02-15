@@ -20,7 +20,7 @@ exports.config = {
 ],
     logLevel: 'error',
     bail: 0,
-    baseUrl: 'https://cnt-489c4f7b-97c6-4d05-b79f-d2dbcd563149.containerhub.tripleten-services.com',
+    baseUrl: 'https://cnt-75a9a395-e00d-419c-98c1-36475f3d8f8a.containerhub.tripleten-services.com',
     waitforTimeout: 10000,
     before: function (capabilities, specs) {
         browser.setTimeout({ 'pageLoad': 10000 })

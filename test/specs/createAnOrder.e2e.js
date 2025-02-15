@@ -6,7 +6,7 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
     })
@@ -15,7 +15,7 @@ describe('Create an order', () => {
        await browser.url(`/`)
        await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
        const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-       await callTaxiButton.waitForExist({ timeout: 15000 });
+       await callATaxiButton.waitForExist({ timeout: 15000 });
        await callATaxiButton.waitForClickable({ timeout: 15000 });
        await callATaxiButton.click();
        const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
@@ -27,7 +27,7 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
@@ -47,7 +47,7 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
@@ -84,7 +84,7 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
@@ -124,7 +124,7 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
@@ -167,7 +167,7 @@ describe('Create an order', () => {
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
         await callATaxiButton.waitForClickable({ timeout: 15000 });
-        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
         await optionSupportive.waitForClickable({ timeout: 10000});
@@ -215,7 +215,7 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
@@ -267,7 +267,7 @@ describe('Create an order', () => {
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
         const callATaxiButton = await $('//button[contains(text(), "Call a taxi")]');
-        await callTaxiButton.waitForExist({ timeout: 15000 });
+        await callATaxiButton.waitForExist({ timeout: 15000 });
         await callATaxiButton.waitForClickable({ timeout: 15000 });
         await callATaxiButton.click();
         const optionSupportive = await $('//div[contains(@class, "tcard-title") and text()="Supportive"]/following-sibling::div');
