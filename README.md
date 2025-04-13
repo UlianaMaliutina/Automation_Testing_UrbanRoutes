@@ -1,4 +1,4 @@
-## Sprint 8 Project, Uliana Maliutina
+Automated End-to-End Testing
 
 ## Description
 This project involves writing automated end-to-end (E2E) tests to validate the functionality of the Urban Routes taxi ordering application. The goal is to simulate a user's journey through the process of ordering a taxi, ensuring that all critical features work as expected.
@@ -27,10 +27,12 @@ This project involves writing automated end-to-end (E2E) tests to validate the f
 
 ## How to run tests:
 
-1. Clone the repository: git clone https://github.com/username/hm08-qa-us.git
-cd hm08-qa-us
+1. Clone the repository: https://github.com/UlianaMaliutina/Automation_Testing_UrbanRoutes.git
+
 2. Install dependencies: npm install
+
 3. Update the wdio.conf.js file with the correct API URL: module.exports = {
     baseUrl: 'https://cnt-75a9a395-e00d-419c-98c1-36475f3d8f8a.containerhub.tripleten-services.com',
 };
+
 4. Execute the test suite using WebdriverIO: npm run wdio
